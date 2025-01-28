@@ -27,6 +27,11 @@ public class Exercise22 {
         for (int i = 0; i < customList.size(); i++) {
             System.out.println(i + ". " + customList.get(i));
         }
+
+        //ALTERNATIVA (mejor)
+        //for (String s: customList) {
+           // System.out.println(s + ". " + customList.get(s));
+        //}
     }
 
     public static boolean addElementToList(List<String> customList, String element) {
@@ -35,9 +40,7 @@ public class Exercise22 {
 
     public static void main(String[] args) {
         List<String> customList = createArrayList();
-        boolean addedToList = addElementToList(customList, "AAAAA");
+        addElementToList(customList, "AAAAA");
         printElementsAndIndex(customList);
     }
-
-
 }
